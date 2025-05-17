@@ -1,10 +1,8 @@
----
-
 # Facial Expression Recognition
 
 This project classifies facial expressions into one of seven emotion categories using classical computer vision techniques and machine learning.
 
-### 📁 Emotion Labels
+## 📁 Emotion Labels
 
 * **0**: Angry
 * **1**: Disgust
@@ -16,13 +14,13 @@ This project classifies facial expressions into one of seven emotion categories 
 
 ---
 
-### 📦 Dataset
+## 📦 Dataset
 
 We use the [FER-2013 dataset](https://www.kaggle.com/datasets/msambare/fer2013) from Kaggle, which provides labeled 48x48 grayscale facial images.
 
 ---
 
-### 🧼 Preprocessing Pipeline
+## 🧼 Preprocessing Pipeline
 
 Each image is enhanced using:
 
@@ -35,7 +33,7 @@ Each image is enhanced using:
 
 ---
 
-### 🔄 Data Augmentation
+## 🔄 Data Augmentation
 
 Augmentations include:
 
@@ -45,7 +43,7 @@ Augmentations include:
 
 ---
 
-### 🧠 Feature Extraction
+## 🧠 Feature Extraction
 
 We extract and combine:
 
@@ -54,14 +52,14 @@ We extract and combine:
 
 ---
 
-### 🧪 Dimensionality Reduction
+## 🧪 Dimensionality Reduction
 
 * Features are scaled with `StandardScaler`
 * Reduced using **PCA** to 300 components
 
 ---
 
-### 📊 Classification
+## 📊 Classification
 
 Tested models:
 
@@ -74,13 +72,13 @@ Evaluation includes accuracy and confusion matrix visualization.
 
 ---
 
-### 📉 Handling Imbalance
+## 📉 Handling Imbalance
 
 Used `RandomUnderSampler` from **imbalanced-learn** to balance classes in the training set.
 
 ---
 
-### 🖼️ Visualizations
+## 🖼️ Visualizations
 
 * Class distribution before and after resampling
 * Original vs. preprocessed image comparison
@@ -88,10 +86,8 @@ Used `RandomUnderSampler` from **imbalanced-learn** to balance classes in the tr
 
 ---
 
-### 📌 Usage
+## 📌 Usage
 
 1. Download dataset from Kaggle using `kagglehub`
 2. Run preprocessing and feature extraction
 3. Train and evaluate with your preferred classifier
-
----
